@@ -1,19 +1,42 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 
 <head>
   <title>Event Planner or some other cool title that we will come up with before we fall asleep</title>
-  <link rel="stylesheet" href="event.css">
+  <link  rel="stylesheet" type="text/css" href="event.css">
+  <script src="event.js"></script>
+  
 </head>
 
 <body>
-  <h1>Destressing the Event Planning</h1>
-  <h3>Welcome to Destressing the Event Planning! On this website you will be able to organize your upcoming event while also blah blah blah...<h3>
+	<div class="header-cont">
+		<img id="bannerImage" src="project site banner@1,25x.png" alt="Site Banner">
+	</div>
+	<div id='position'></div>
+	<h1>Destressing the Event Planning</h1>
 
-<!--creating the buttons for each type of event and linking them to the appropriate page-->
-  <div>
-      <input class="button" action="/prom" type="button" value="Prom">
-      <input class="button" action="/wedding" type="button" value="Wedding">
-      <input class="button" action="/sweetsixteen" type="button" value="Sweet Sixteen">
-      <input class="button" action="birthday" type="button" value="Birthday Party">
-  </div>
+	<h3>Welcome to Destressing the Event Planning! On this website you will be able to organize your upcoming event while also blah blah blah...<h3>
+	
+	<div class="leftColumn">
+		WELCOME MESSAGE
+	</div>
+	<div class="rightColumn">
+		EVENT TYPE SELECTION
+		<!--The buttons for each type of event and linking them to the appropriate page-->
+		<div>	
+			<a href="eventprompage.html">
+				<input href="http://www.w3schools.com/html/" class="button" action="/prom" type="button" value="Prom" href="http://www.w3schools.com/html/">
+			</a>
+			<a href="eventweddingpage.html">
+		    	<input class="button" action="/wedding" type="button" value="Wedding">
+		    </a>
+		    <a href="eventsweetsixteenpage.html">
+		    	<input class="button" action="/sweetsixteen" type="button" value="Sweet Sixteen">
+		    </a>
+		    <a href="eventbirthdaypage.html">
+		    	<input class="button" action="birthday" type="button" value="Birthday Party">
+		    </a>
+		</div>
+	</div>
+
 </body>
+

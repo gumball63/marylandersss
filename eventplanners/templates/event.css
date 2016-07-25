@@ -1,6 +1,31 @@
+body{
+    margin:0px;
+}
+
+.header-cont {
+    width:100%;
+    position:fixed;
+    top:0px;
+}
+
+#bannerImage{
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+    /*Image max-width:100% and 
+    height:auto works in IE7, but not in IE8 
+    (yes, apparently, a weird IE bug). 
+    To fix this, you need to add width:auto\9 for IE8.*/
+}
+
+.leftColumn{float:left; width:50%; margin: 10px;}
+.rightColumn{float:right; width:50%; margin: 10px}
+
 * {
   color: blue
 }
+
+h1, h3 {position: relative;}
 
 .button {
   max-width: 100%;
@@ -18,4 +43,5 @@
   -webkit-box-shadow: 6px 6px 5px #999999;
   -moz-box-shadow: 6px 6px 5px #999999;
   box-shadow: 6px 6px 5px; #999999;
+  position: relative;
 }
