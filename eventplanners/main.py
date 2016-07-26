@@ -22,9 +22,9 @@ class WeddingHandler(webapp2.RequestHandler):
         template = jinja_environment.get_template('eventweddingpage.html')
         self.response.out.write(template.render())
 
-class SweetSixteenHandler(webapp2.RequestHandler):
+class GraduationHandler(webapp2.RequestHandler):
     def get(self):
-        template = jinja_environment.get_template('eventsweetsixteenpage.html')
+        template = jinja_environment.get_template('eventgraduationpage.html')
         self.response.out.write(template.render())
 
 class BirthdayHandler(webapp2.RequestHandler):
@@ -36,6 +36,6 @@ app = webapp2.WSGIApplication([
     ('/', MainHandler),
     ('/prom', PromHandler),
     ('/wedding', WeddingHandler),
-    ('/sweetsixteen', SweetSixteenHandler),
+    ('/graduation', GraduationHandler),
     ('/birthday', BirthdayHandler),
 ], debug=True)
