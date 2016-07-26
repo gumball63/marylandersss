@@ -1,7 +1,5 @@
 body{
     margin:0px;
-    background-image: url(drevene-pozadie.jpg);
-
 }
 
 .header-cont {
@@ -20,10 +18,14 @@ body{
     To fix this, you need to add width:auto\9 for IE8.*/
 }
 
+#checklistpage {
+  background-image: url("http://www.xmpie.com/wp-content/uploads/2015/07/Color_Pencils_Stephan_Reinhardt.jpg")
+}
 
 #homepage{
   font-family: hawaii;
   color: white;
+  background-image: url(drevene-pozadie.jpg);
 }
 
 .title{
@@ -111,6 +113,7 @@ h1, h3 {position: relative;}
   text-align: center;
 }
 
+/*homepage button images*/
 #weddingbutton {
   font-family: cursive;
   background-image: url(weddingpic.jpg);
