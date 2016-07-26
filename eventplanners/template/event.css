@@ -1,6 +1,6 @@
 body{
     margin:0px;
-      background-image: url(drevene-pozadie.jpg);
+    background-image: url(drevene-pozadie.jpg);
 
 }
 
@@ -22,12 +22,6 @@ body{
 }
 
 
-
-
-
-/*COMMENT COMMENT COMMENT OMMENT COMMENT COMMENTOMMENT COMMENT COMMENTOMMENT COMMENT COMMENTOMMENT COMMENT COMMENTOMMENT COMMENT COMMENTOMMENT COMMENT COMMENTOMMENT COMMENT COMMENTOMMENT COMMENT COMMENTOMMENT COMMENT COMMENTOMMENT COMMENT COMMENT */
-
-
 #homepage{
   font-family: hawaii;
   color: white;
@@ -41,11 +35,9 @@ body{
 .leftColumn{float:left; width:40%; margin: 10px;
   font-size: 20px
 }
-.rightColumn{float:right; width:50%; margin: 10px;
+.rightColumn{float:right; width:40%; margin: 10px;
   font-size: 20px
 }
-.leftColumn{float:left; width:50%; margin: 10px;}
-.rightColumn{float:right; width:50%; margin: 10px}
 
 * {
   color: blue;
@@ -232,7 +224,7 @@ h1, h3 {position: relative;}
     margin-left: 50px;
 }
 
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+/* Style page content - This pushes the page content to the right when you open the side navigation */
 #main {
     transition: margin-left .5s;
     padding: 20px;
