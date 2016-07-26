@@ -17,6 +17,30 @@ handlers:
   static_files: event.js
   upload: event\.js
 
+- url: /balloons1\.png
+  static_files: balloons1.png
+  upload: balloons1\.png
+
+- url: /drevene-pozadie\.jpg
+  static_files: drevene-pozadie.jpg
+  upload: drevene-pozadie\.jpg
+
+- url: /project site banner@1,25x\.png
+  static_files: project site banner@1,25x.png
+  upload: project site banner@1,25x\.png
+
+- url: /prompic\.jpg
+  static_files: prompic.jpg
+  upload: prompic\.jpg
+
+- url: /weddingpic\.jpg
+  static_files: weddingpic.jpg
+  upload: weddingpic\.jpg
+
+- url: /graduationpic\.jpg
+  static_files: graduationpic.jpg
+  upload: graduationpic\.jpg
+
 - url: .*
   script: main.app
 
