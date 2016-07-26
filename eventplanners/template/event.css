@@ -1,5 +1,7 @@
 body{
     margin:0px;
+    background-image: url(drevene-pozadie.jpg);
+
 }
 
 .header-cont {
@@ -13,11 +15,12 @@ body{
     max-width: 100%;
     height: auto;
     width: auto\9; /* ie8 */
-    /*Image max-width:100% and
-    height:auto works in IE7, but not in IE8
-    (yes, apparently, a weird IE bug).
+    /*Image max-width:100% and 
+    height:auto works in IE7, but not in IE8 
+    (yes, apparently, a weird IE bug). 
     To fix this, you need to add width:auto\9 for IE8.*/
 }
+
 
 #homepage{
   font-family: hawaii;
@@ -32,12 +35,12 @@ body{
 .leftColumn{float:left; width:40%; margin: 10px;
   font-size: 20px
 }
-.rightColumn{float:right; width:50%; margin: 10px;
+.rightColumn{float:right; width:40%; margin: 10px;
   font-size: 20px
 }
 
 * {
-  color: white;
+  color: blue;
   text-shadow:
   -1px -1px 0 black,
   1px -1px 0 black,
@@ -58,32 +61,34 @@ h1, h3 {position: relative;}
   background: #3366CC;
   color: #FFFFFF;
   cursor: pointer;
-  border: 2px gradient white;
+  border: 1px solid #999999;
   border-radius: 10px;
   -webkit-box-shadow: 6px 6px 5px #999999;
   -moz-box-shadow: 6px 6px 5px #999999;
-  box-shadow: 6px 6px 5px white;
+  box-shadow: 6px 6px 5px; #999999;
   position: relative;
 }
 
+
+
 #weddingbutton {
   font-family: cursive;
-  background: url("http://www.whitewhite.com.au/wp-content/uploads/2016/03/real-wedding-james-amanda-white-white-weddings-events-hanging-gardens-guests-300x100.jpg");
+  background-image: url(weddingpic.jpg);
 }
 
 #prombutton {
   font-family: consolas;
-  background: url("https://youngandwild4th.files.wordpress.com/2013/10/dvd_foot.jpg?w=300&h=100");
+  background-image: url(prompic.jpg);
 }
 
 #birthdaybutton {
   font-family: fantasy;
-  background: url("https://fogsmoviereviews.files.wordpress.com/2012/04/balloons1.png")
+  background-image: url(balloons1.png)
 }
 
 #graduationbutton {
   font-family: papyrus;
-  background: url("http://dancengroovedjs.com/wp-content/uploads/2013/10/graduation-featured-300x100-1.jpg")
+  background-image: url(graduationpic.jpg)
 }
 
 /*
@@ -219,7 +224,7 @@ h1, h3 {position: relative;}
     margin-left: 50px;
 }
 
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+/* Style page content - This pushes the page content to the right when you open the side navigation */
 #main {
     transition: margin-left .5s;
     padding: 20px;
