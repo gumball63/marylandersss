@@ -19,11 +19,39 @@ body{
     To fix this, you need to add width:auto\9 for IE8.*/
 }
 
+
+
+
+
+/*COMMENT COMMENT COMMENT OMMENT COMMENT COMMENTOMMENT COMMENT COMMENTOMMENT COMMENT COMMENTOMMENT COMMENT COMMENTOMMENT COMMENT COMMENTOMMENT COMMENT COMMENTOMMENT COMMENT COMMENTOMMENT COMMENT COMMENTOMMENT COMMENT COMMENTOMMENT COMMENT COMMENT */
+
+
+#homepage{
+  font-family: hawaii;
+  color: white;
+}
+
+.title{
+  font-size: 40px;
+  margin-left: 50px
+}
+
+.leftColumn{float:left; width:40%; margin: 10px;
+  font-size: 20px
+}
+.rightColumn{float:right; width:50%; margin: 10px;
+  font-size: 20px
+}
 .leftColumn{float:left; width:50%; margin: 10px;}
 .rightColumn{float:right; width:50%; margin: 10px}
 
 * {
-  color: blue
+  color: blue;
+  text-shadow:
+  -1px -1px 0 black,
+  1px -1px 0 black,
+  -1px 1px 0 black,
+  1px 1px 0 black;
 }
 
 h1, h3 {position: relative;}
@@ -45,6 +73,28 @@ h1, h3 {position: relative;}
   -moz-box-shadow: 6px 6px 5px #999999;
   box-shadow: 6px 6px 5px; #999999;
   position: relative;
+}
+
+
+
+#weddingbutton {
+  font-family: cursive;
+  background-image: url(weddingpic.jpg);
+}
+
+#prombutton {
+  font-family: consolas;
+  background-image: url(prompic.jpg);
+}
+
+#birthdaybutton {
+  font-family: fantasy;
+  background-image: url(balloons1.png)
+}
+
+#graduationbutton {
+  font-family: papyrus;
+  background-image: url(graduationpic.jpg)
 }
 
 /*
