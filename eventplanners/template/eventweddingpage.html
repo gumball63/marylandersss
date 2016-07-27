@@ -20,7 +20,7 @@
 <image src="https://media2.giphy.com/media/gRtEeOwA1R08E/200.gif" />
 
 
-	<div id="mySidenav" class="sidenav">
+<div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
 	<a href="/checklist">CHECKLIST</a>
 	<a href="/countdown">COUNTDOWN</a>
@@ -40,16 +40,17 @@
 		    <script type="text/javascript">
 						function animateWedding() {
 								console.log("Called");
-		          
-		            $('#weddinghaircollage').animate({right: '-100%'}, 10000, 'linear', function(){animateWedding();});
+								$('#weddinghaircollage').css({right:'10%%'});
+		            $('#weddinghaircollage').animate({right: '-110%'}, 10000, 'linear', function(){animateWedding();});
 								exit()
 		        }
 		        $(document).on("click", animateWedding)
 		    </script>
 		<body>
-		    <div style="width: 100%;"><img src="weddinghaircollage.jpg" id="weddinghaircollage" style="position:absolute; left: -100px"/></div>
+		    <div style="width: 100%;"><img src="weddinghaircollage.jpg" id="weddinghaircollage" style="position:relative;"/></div>
 		</body>
 	<a>
+	</a>
 		<input ID="weddinginvitations" class="weddingbutton" type="button" value="Invitations">
 	</a>
 	<a>

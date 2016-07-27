@@ -45,7 +45,7 @@ body{
 }
 
 * {
-  color: blue;
+  color: black;
   text-shadow:
   -1px -1px 0 black,
   1px -1px 0 black,
@@ -302,8 +302,14 @@ ul {
 
 /* Style page content - This pushes the page content to the right when you open the side navigation */
 #main {
+    color: black;
     transition: margin-left .5s;
     padding: 20px;
+    text-shadow:
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
