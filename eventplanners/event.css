@@ -19,7 +19,11 @@ body{
 }
 
 #checklistpage {
-  background-image: url("http://www.xmpie.com/wp-content/uploads/2015/07/Color_Pencils_Stephan_Reinhardt.jpg")
+  background-image: url("http://3.bp.blogspot.com/-VCnuxnJpNQE/TrF28vNhciI/AAAAAAAAImA/eLrBnClVi4U/s1600/1500x1500-texture-abstract-kw1001.jpg")
+}
+
+#countdownpage {
+  background-image: url("http://www.caoping8.com/wp-content/uploads/2014/06/popular-landscaping-engaging-tropical-world-landscape-and-irrigation-llc-tropical-landscape-front-yard-tropical-landscape-ideas-small-yards-tropical-landscape-ideas-front-yard-tropical-landscape-f.jpg")
 }
 
 #homepage{
@@ -108,9 +112,37 @@ h1, h3 {position: relative;}
 }
 
 .weddingpage {
+  text-align: center
+}
+
+.weddingpage, .weddingcheckboxes {
   color: white;
   font-family: cursive;
-  text-align: center;
+}
+
+.graduationcheckboxes {
+  color: white;
+  font-family: papyrus;
+}
+
+.birthdaycheckboxes {
+  color: white;
+  font-family: fantasy;
+}
+
+.promcheckboxes {
+  color: white;
+  font-family: consolas;
+}
+
+ul {
+  color: white;
+  font-size: 20px
+}
+
+.weddingcheckboxes, .birthdaycheckboxes, .promcheckboxes, .graduationcheckboxes {
+  font-size: 30px;
+  column-count: 4;
 }
 
 /*homepage button images*/

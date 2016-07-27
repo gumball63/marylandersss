@@ -7,11 +7,14 @@
 	<script src="event.js"></script>
 </head>
 
-<body ID="checklistpage">
+<h1>What Do You Have Ready?</h1>
 
-<div class="header-cont">
-		<img id="bannerImage" src="project_site_banner@1,25x.png" alt="Site Banner">
+<div id="main">
+    <div id='position'></div>
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">MENU</span>
 </div>
+
+<body ID="checklistpage">
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
@@ -23,81 +26,161 @@
   <a href="/wedding">WEDDING</a>
 </div>
 
-<div id="main">
-    <div id='position'></div>
+<div>
+    <script type="text/javascript" src="jquery/js/jquery-1.4.4.min.js"></script>
+
+    <script type="text/javascript">
+        function animateWedding() {
+            console.log("Called");
+            $('#movingflowers').css({right:'20%'});
+            $('#movingflowers').animate({right: '-100%'}, 12000, 'linear', function(){animateWedding();});
+        }
+        $(document).ready(function() {
+            animateWedding();
+        });
+    </script>
+<body>
+    <div style="width: 100%;"><img src="https://cdn-img-1.wanelo.com/p/d3f/eab/758/144673537e52c001f939117/x200-q90.jpg" id="movingflowers" style="position:relative;"/></div>
+
+</body>
+</div>
 
 <body>
   <div class="weddingcheckboxes">Wedding:
-    <ul><input type="checkbox" value="wedding">Hair Appointment</ul>
+    <ul><input type="checkbox" value="wedding">Location Booked</ul>
+    <ul><input type="checkbox" value="wedding">Invitations</ul>
+    <ul><input type="checkbox" value="wedding">Hair and Make-Up Appointment</ul>
     <ul><input type="checkbox" value="wedding">Dress</ul>
     <ul><input type="checkbox" value="wedding">Rings</ul>
     <ul><input type="checkbox" value="wedding">Music/Entertainment</ul>
-    <ul><input type="checkbox" value="wedding">Location Booked</ul>
-    <ul><input type="checkbox" value="wedding">Make-Up</ul>
     <ul><input type="checkbox" value="wedding">Tuxedo</ul>
     <ul><input type="checkbox" value="wedding">Flowers</ul>
-    <ul><input type="checkbox" value="wedding">Food</ul>
+    <ul><input type="checkbox" value="wedding">Food and Drinks</ul>
     <ul><input type="checkbox" value="wedding">Cake</ul>
     <ul><input type="checkbox" value="wedding">Decorations</ul>
-    <ul><input type="checkbox" value="wedding">Invitations</ul>
     <ul><input type="checkbox" value="wedding">Photographer</ul>
+    <ul><input type="checkbox" value="wedding">Other: </ul>
     <ul><input type="checkbox" value="wedding">Other: </ul>
   </div>
 </body>
 
+<div>
+    <script type="text/javascript" src="jquery/js/jquery-1.4.4.min.js"></script>
+
+    <script type="text/javascript">
+        function animateProm() {
+            console.log("Called");
+            $('#movinglimo').css({left:'100%'});
+            $('#movinglimo').animate({left: '-100%'}, 7000, 'linear', function(){animateProm();});
+        }
+        $(document).ready(function() {
+            animateProm();
+        });
+    </script>
+<body>
+    <div style="width: 100%;"><img src="limousine.jpg" id="movinglimo" style="position:relative;"/></div>
+
+</body>
+</div>
+
 <body>
   <div class="promcheckboxes">Prom:
-    <ul><input type="checkbox" value="prom"></ul>
-    <ul><input type="checkbox" value="prom"></ul>
-    <ul><input type="checkbox" value="prom"></ul>
-    <ul><input type="checkbox" value="prom"></ul>
-    <ul><input type="checkbox" value="prom"></ul>
-    <ul><input type="checkbox" value="prom"></ul>
-    <ul><input type="checkbox" value="prom"></ul>
-    <ul><input type="checkbox" value="prom"></ul>
-    <ul><input type="checkbox" value="prom"></ul>
-    <ul><input type="checkbox" value="prom"></ul>
-    <ul><input type="checkbox" value="prom"></ul>
-    <ul><input type="checkbox" value="prom"></ul>
-    <ul><input type="checkbox" value="prom"></ul>
+    <ul><input type="checkbox" value="prom">Hair and Make-Up Appointment</ul>
+    <ul><input type="checkbox" value="prom">Dress</ul>
+    <ul><input type="checkbox" value="prom">Tuxedo</ul>
+    <ul><input type="checkbox" value="prom">Jewelry</ul>
+    <ul><input type="checkbox" value="prom">Corsage</ul>
+    <ul><input type="checkbox" value="prom">Bouttonniere</ul>
+    <ul><input type="checkbox" value="prom">Photographer</ul>
+    <ul><input type="checkbox" value="prom">Limousine</ul>
+    <ul><input type="checkbox" value="prom">Food and Drinks</ul>
+    <ul><input type="checkbox" value="prom">Shoes</ul>
+    <ul><input type="checkbox" value="prom">Playlist</ul>
+    <ul><input type="checkbox" value="prom">Other: </ul>
+    <ul><input type="checkbox" value="prom">Other: </ul>
   </div>
 </body>
+
+<div>
+    <script type="text/javascript" src="jquery/js/jquery-1.4.4.min.js"></script>
+
+    <script type="text/javascript">
+        function animateBirthday() {
+            console.log("Called");
+            $('#movingballoon').css({right:'50%'});
+            $('#movingballoon').animate({right: '-100%'}, 8000, 'linear', function(){animateBirthday();});
+        }
+        $(document).ready(function() {
+            animateBirthday();
+        });
+    </script>
+<body>
+    <div style="width: 100%;"><img src="https://media2.giphy.com/media/RW9MxX8iJO9GM/200.gif" id="movingballoon" style="position:relative;"/></div>
+
+</body>
+</div>
 
 <body>
   <div class="birthdaycheckboxes">Birthday:
-    <ul><input type="checkbox" value="birthday"></ul>
-    <ul><input type="checkbox" value="birthday"></ul>
-    <ul><input type="checkbox" value="birthday"></ul>
-    <ul><input type="checkbox" value="birthday"></ul>
-    <ul><input type="checkbox" value="birthday"></ul>
-    <ul><input type="checkbox" value="birthday"></ul>
-    <ul><input type="checkbox" value="birthday"></ul>
-    <ul><input type="checkbox" value="birthday"></ul>
-    <ul><input type="checkbox" value="birthday"></ul>
-    <ul><input type="checkbox" value="birthday"></ul>
-    <ul><input type="checkbox" value="birthday"></ul>
-    <ul><input type="checkbox" value="birthday"></ul>
-    <ul><input type="checkbox" value="birthday"></ul>
+    <ul><input type="checkbox" value="birthday">Invitations</ul>
+    <ul><input type="checkbox" value="birthday">Food</ul>
+    <ul><input type="checkbox" value="birthday">Cake</ul>
+    <ul><input type="checkbox" value="birthday">Party Favors</ul>
+    <ul><input type="checkbox" value="birthday">Decorations</ul>
+    <ul><input type="checkbox" value="birthday">Balloons</ul>
+    <ul><input type="checkbox" value="birthday">Plates</ul>
+    <ul><input type="checkbox" value="birthday">Utensils</ul>
+    <ul><input type="checkbox" value="birthday">Napkins</ul>
+    <ul><input type="checkbox" value="birthday">Drinks</ul>
+    <ul><input type="checkbox" value="birthday">Activities</ul>
+    <ul><input type="checkbox" value="birthday">Other: </ul>
+    <ul><input type="checkbox" value="birthday">Other: </ul>
   </div>
 </body>
+
+<div>
+    <script type="text/javascript" src="jquery/js/jquery-1.4.4.min.js"></script>
+
+    <script type="text/javascript">
+        function animateGraduation() {
+            console.log("Called");
+            $('#movingcap').css({right:'10%'});
+            $('#movingcap').animate({right: '-100%'}, 14000, 'linear', function(){animateGraduation();});
+        }
+        $(document).ready(function() {
+            animateGraduation();
+        });
+        function rotation() {
+          $("#movingcap").rotate({
+            angle:0,
+            animateTo:360,
+            callback: rotation
+          });
+        }
+        $(document).ready(function() {
+          rotation();
+        })
+    </script>
+<body>
+    <div style="width: 100%;"><img src="graduationcap.jpg" id="movingcap" style="position:relative;"/></div>
+
+</body>
+</div>
 
 <body>
   <div class="graduationcheckboxes">Graduation:
-    <ul><input type="checkbox" value="graduation"></ul>
-    <ul><input type="checkbox" value="graduation"></ul>
-    <ul><input type="checkbox" value="graduation"></ul>
-    <ul><input type="checkbox" value="graduation"></ul>
-    <ul><input type="checkbox" value="graduation"></ul>
-    <ul><input type="checkbox" value="graduation"></ul>
-    <ul><input type="checkbox" value="graduation"></ul>
-    <ul><input type="checkbox" value="graduation"></ul>
-    <ul><input type="checkbox" value="graduation"></ul>
-    <ul><input type="checkbox" value="graduation"></ul>
-    <ul><input type="checkbox" value="graduation"></ul>
-    <ul><input type="checkbox" value="graduation"></ul>
-    <ul><input type="checkbox" value="graduation"></ul>
+    <ul><input type="checkbox" value="graduation">Invitations</ul>
+    <ul><input type="checkbox" value="graduation">Party Favors</ul>
+    <ul><input type="checkbox" value="graduation">Food</ul>
+    <ul><input type="checkbox" value="graduation">Dessert</ul>
+    <ul><input type="checkbox" value="graduation">Decorations</ul>
+    <ul><input type="checkbox" value="graduation">Plates</ul>
+    <ul><input type="checkbox" value="graduation">Napkins</ul>
+    <ul><input type="checkbox" value="graduation">Utensils</ul>
+    <ul><input type="checkbox" value="graduation">Balloons</ul>
+    <ul><input type="checkbox" value="graduation">Games</ul>
+    <ul><input type="checkbox" value="graduation">Drinks</ul>
+    <ul><input type="checkbox" value="graduation">Other: </ul>
+    <ul><input type="checkbox" value="graduation">Other: </ul>
   </div>
 </body>
-
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()">MENU</span>
-</div>
