@@ -35,19 +35,53 @@
 
 <h1 class="weddingpage">A Wedding to Remember</h1>
 
-<div>
+<div class="thumbnails">
 		<input ID="weddinghair" class="weddingbutton" type="button" value="Hairstyles">
+		    <script type="text/javascript">
+						function animateWedding() {
+								console.log("Called");
+		          
+		            $('#weddinghaircollage').animate({right: '-100%'}, 10000, 'linear', function(){animateWedding();});
+								exit()
+		        }
+		        $(document).on("click", animateWedding)
+		    </script>
+		<body>
+		    <div style="width: 100%;"><img src="weddinghaircollage.jpg" id="weddinghaircollage" style="position:absolute; left: -100px"/></div>
+		</body>
+	<a>
 		<input ID="weddinginvitations" class="weddingbutton" type="button" value="Invitations">
+	</a>
+	<a>
 		<input ID="weddingflowers" class="weddingbutton" type="button" value="Flowers">
+	</a>
+	<a>
 		<input ID="weddingcake" class="weddingbutton" type="button" value="Cake">
+	</a>
+	<a>
 		<input ID="weddingdress" class="weddingbutton" type="button" value="Dresses">
+	</a>
+	<a>
 		<input ID="weddingtux" class="weddingbutton" type="button" value="Tuxedos">
+	</a>
+	<a>
 		<input ID="weddingrings" class="weddingbutton" type="button" value="Rings">
+	</a>
+	<a>
 		<input ID="weddingmusic" class="weddingbutton" type="button" value="Music">
+	</a>
+	<a>
 		<input ID="weddinglocation" class="weddingbutton" type="button" value="Locations">
+	</a>
+	<a>
 		<input ID="weddingfood" class="weddingbutton" type="button" value="Food">
+	</a>
+	<a>
 		<input ID="weddingdecorations" class="weddingbutton" type="button" value="Decorations">
+	</a>
+	<a>
 		<input ID="weddingbridesmaids" class="weddingbutton" type="button" value="Bridesmaids">
+	</a>
 </div>
 
 <script>
