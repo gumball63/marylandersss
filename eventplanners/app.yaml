@@ -41,6 +41,14 @@ handlers:
   static_files: graduationpic.jpg
   upload: graduationpic\.jpg
 
+- url: /limousine\.jpg
+  static_files: limousine.jpg
+  upload: limousine\.jpg
+
+- url: /graduationcap\.jpg
+  static_files: graduationcap.jpg
+  upload: graduationcap\.jpg
+
 - url: /checklist\.html
   static_files: checklist.html
   upload: checklist\.html
