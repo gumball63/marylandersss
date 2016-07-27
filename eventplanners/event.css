@@ -1,7 +1,5 @@
 body{
     margin:0px;
-    background-image: url(drevene-pozadie.jpg);
-
 }
 
 .header-cont {
@@ -20,10 +18,14 @@ body{
     To fix this, you need to add width:auto\9 for IE8.*/
 }
 
+#checklistpage {
+  background-image: url("http://www.xmpie.com/wp-content/uploads/2015/07/Color_Pencils_Stephan_Reinhardt.jpg")
+}
 
 #homepage{
   font-family: hawaii;
   color: white;
+  background-image: url(drevene-pozadie.jpg);
 }
 
 .title{
@@ -88,8 +90,21 @@ h1, h3 {position: relative;}
   background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAbYluU6d7xcxsj2opjfNWG1YjAnZ7VmsWFQYw5skptUsqmMAhsQ') bottom;
 }
 
+.weddingbutton {
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+
 .weddingbutton:hover {
-	background-position: 0 0;
+  border-radius: 50%;
+  -webkit-transform: rotate(360deg);
+     -moz-transform: rotate(360deg);
+       -o-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 .weddingpage {
@@ -98,6 +113,7 @@ h1, h3 {position: relative;}
   text-align: center;
 }
 
+/*homepage button images*/
 #weddingbutton {
   font-family: cursive;
   background-image: url(weddingpic.jpg);

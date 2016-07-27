@@ -25,9 +25,9 @@ handlers:
   static_files: drevene-pozadie.jpg
   upload: drevene-pozadie\.jpg
 
-- url: /project site banner@1,25x\.png
-  static_files: project site banner@1,25x.png
-  upload: project site banner@1,25x\.png
+- url: /project_site_banner@1,25x\.png
+  static_files: project_site_banner@1,25x.png
+  upload: project_site_banner@1,25x\.png
 
 - url: /prompic\.jpg
   static_files: prompic.jpg
@@ -40,6 +40,14 @@ handlers:
 - url: /graduationpic\.jpg
   static_files: graduationpic.jpg
   upload: graduationpic\.jpg
+
+- url: /checklist\.html
+  static_files: checklist.html
+  upload: checklist\.html
+
+- url: /countdown\.html
+  static_files: countdown.html
+  upload: countdown\.html
 
 - url: .*
   script: main.app
