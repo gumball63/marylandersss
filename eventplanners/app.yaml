@@ -34,23 +34,18 @@ handlers:
 #   static_files: prompic.jpg
 #   upload: prompic\.jpg
 
-<<<<<<< HEAD
-- url: /prompage\.css
-  static_files: prompage.css
-  upload: prompage\.css
 
-- url: /grad\.css
-    static_files: grad.css
-    upload: grad\.css
+- url: /static
+ static_dir: static
 
-- url: /event\.js
-  static_files: event.js
-  upload: event\.js
-=======
+- url: /scripts
+  static_dir: scripts
+
+
 # - url: /weddingpic\.jpg
 #   static_files: weddingpic.jpg
 #   upload: weddingpic\.jpg
->>>>>>> abf2fc7ed48a6a480c04866ffa7c859b22df7850
+
 
 # - url: /graduationpic\.jpg
 #   static_files: graduationpic.jpg
