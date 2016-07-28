@@ -3,16 +3,11 @@
 
 <head>
 	<title>Interactive Checklist!</title>
-	<link rel="stylesheet" href="static/event.css">
-	<script src="script/event.js"></script>
+	<link rel="stylesheet" href="/static/event.css">
+		<script src="/scripts/event.js"></script>
 </head>
 
 <h1>What Do You Have Ready?</h1>
-
-<div id="main">
-    <div id='position'></div>
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()">☰MENU</span>
-</div>
 
 <style>
   body {background-image: url(static/checklist.jpg)}
@@ -20,14 +15,19 @@
 
 <body ID="checklistpage">
 
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
-	<a href="/checklist">CHECKLIST</a>
-	<a href="/birthday">BIRTHDAY</a>
-  <a href="/graduation">GRADUATION</a>
-  <a href="/prom">PROM</a>
-  <a href="/wedding">WEDDING</a>
-</div>
+			<div id="mySidenav" class="sidenav">
+			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+			  <a href="/checklist">CHECKLIST</a>
+			  <a href="/birthday">BIRTHDAY</a>
+			  <a href="/graduation">GRADUATION</a>
+			  <a href="/prom">PROM</a>
+			  <a href="/wedding">WEDDING</a>
+			</div>
+
+			<div id="main">
+			    <div id='position'></div>
+			    <span style="font-size:30px;cursor:pointer" onclick="openNav()">☰MENU</span>
+			</div>
 
 <div>
     <script type="text/javascript" src="jquery/js/jquery-1.4.4.min.js"></script>
