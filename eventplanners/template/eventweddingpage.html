@@ -11,8 +11,6 @@
 
 <body>
 
-
-
 <image src="https://media1.giphy.com/media/grgvHdZo40yXK/200.gif" />
 <image src="https://media3.giphy.com/media/LE7KId3xoDe9O/200_s.gif" />
 <image src="https://media1.giphy.com/media/l41YBbqh4ujjSxAQw/200.gif" />
@@ -40,21 +38,44 @@
 		    <script type="text/javascript">
 						function animateWedding() {
 								console.log("Called");
-								$('#weddinghaircollage').css({right:'10%%'});
-		            $('#weddinghaircollage').animate({right: '-110%'}, 10000, 'linear', function(){animateWedding();});
+								$('#weddinghaircollage').css({right:'110%'});
+		            $('#weddinghaircollage').animate({right: '-100%'}, 10000, 'linear', function(){animateWedding();});
 								exit()
 		        }
 		        $(document).on("click", animateWedding)
 		    </script>
-		<body>
-		    <div style="width: 100%;"><img src="weddinghaircollage.jpg" id="weddinghaircollage" style="position:relative;"/></div>
-		</body>
-	<a>
-	</a>
+			<body>
+			    <div style="width: 100%;"><img src="weddinghaircollage.jpg" id="weddinghaircollage" style="position:absolute;"/></div>
+			</body>
+
 		<input ID="weddinginvitations" class="weddingbutton" type="button" value="Invitations">
-	</a>
-	<a>
+				<script type="text/javascript">
+						function animateInvitation() {
+								console.log("Called");
+								$('#weddinginvitationcollage').css({right:'10%%'});
+								$('#weddinginvitationcollage').animate({right: '-110%'}, 10000, 'linear', function(){animateInvitation();});
+								exit()
+						}
+						$(document).on("click", animateInvitation)
+				</script>
+			<body>
+					<div style="width: 100%;"><img src="weddinginvitationcollage.jpg" id="weddinginvitationcollage" style="position:absolute;"/></div>
+			</body>
+
 		<input ID="weddingflowers" class="weddingbutton" type="button" value="Flowers">
+<!--				<script type="text/javascript">
+						function animateFlower() {
+								console.log("Called");
+								$('#weddingflowercollage').css({right:'10%%'});
+								$('#weddingflowercollage').animate({right: '-110%'}, 10000, 'linear', function(){animateFlower();});
+								exit()
+						}
+						$(document).on("click", animateFlower)
+				</script>
+			<body>
+					<div style="width: 100%;"><img src="weddingflowercollage.jpg" id="weddingflowercollage" style="position:relative;"/></div>
+			</body>
+-->
 	</a>
 	<a>
 		<input ID="weddingcake" class="weddingbutton" type="button" value="Cake">
@@ -87,29 +108,6 @@
 
 <script>
   $(weddinghair).on("click", sayhair)
-  function sayhair () {fadeout();}
-	$(weddinginvitations).on("click", sayinvite)
-	function sayinvite () {alert("Hair!");}
-	$(weddingflowers).on("click", sayhi)
-	function sayhi () {alert("Hair!");}
-	$(weddingcake).on("click", sayhi)
-	function sayhi () {alert("Hair!");}
-	$(weddingdress).on("click", sayhi)
-	function sayhi () {alert("Hair!");}
-	$(weddingtux).on("click", sayhi)
-	function sayhi () {alert("Hair!");}
-	$(weddingrings).on("click", sayhi)
-	function sayhi () {alert("Hair!");}
-	$(weddingmusic).on("click", sayhi)
-	function sayhi () {alert("Hair!");}
-	$(weddinglocation).on("click", sayhi)
-	function sayhi () {alert("Hair!");}
-	$(weddingfood).on("click", sayhi)
-	function sayhi () {alert("Hair!");}
-	$(weddingdecorations).on("click", sayhi)
-	function sayhi () {alert("Hair!");}
-	$(weddingbridesmaids).on("click", sayhi)
-	function sayhi () {alert("Hair!");}
 </script>
 
 <style>

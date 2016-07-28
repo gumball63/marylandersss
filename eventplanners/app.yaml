@@ -53,6 +53,14 @@ handlers:
   static_files: weddinghaircollage.jpg
   upload: weddinghaircollage\.jpg
 
+- url: /weddingflowercollage\.jpg
+  static_files: weddingflowercollage.jpg
+  upload: weddingflowercollage\.jpg
+
+- url: /weddinginvitationcollage\.jpg
+  static_files: weddinginvitationcollage.jpg
+  upload: weddinginvitationcollage\.jpg
+
 - url: /checklist\.html
   static_files: checklist.html
   upload: checklist\.html
