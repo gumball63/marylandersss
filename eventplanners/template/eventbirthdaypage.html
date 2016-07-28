@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-
+<html>
 <head>
   <title>Birthday PlanIt!</title>
-  <link  rel="stylesheet" type="text/css" href="event.css">
-  <script type="text/javascript" src="event.js"> </script>
-  <script type="text/javascript" src="eventmodal.js"> </script>  
+  <link  rel="stylesheet" type="text/css" href="/static/event.css">
+  <script type="text/javascript" src="/scripts/event.js"> </script>
 
 </head>
 
-<body class="birthdayBody">
+<body id="birthdayBody">
     <div class="header-cont">
-    <img ID="bannerImage" src="project_site_banner@1,25x.png" alt="Site Banner">
+    <img ID="bannerImage" src="/static/project_site_banner@1,25x.png" alt="Site Banner">
   </div>
 
 <button type="button" onclick="loadDoc()">Change Content</button>
@@ -32,9 +31,8 @@
     <p>Birthday parties are a great boost to anyone's self-esteem. Making them feel like kings (or queens) for the day is one of the best (and most lasting) gifts you can give them. But where and how should you start?</p>
   <span style="font-size:30px;cursor:pointer" onclick="openNav()">☰MENU</span>
 
-</div>
 
-<div class="buttonMenu">
+      <div class="buttonMenu"> </div>
     <!-- Trigger/Open The Modal -->
     <a href="#openModalinvitation" id="birthdaybutton" ">
       <input ID="invitations" class="birthdaybuttons" type="button" value="Invitations">
@@ -76,6 +74,10 @@
       <input ID="miscellaneous" class="birthdaybuttons" type="button" value="Miscellaneous">
     </a>
 </div>
+
+</div>
+
+
 
 
 
@@ -297,11 +299,5 @@
 
 
 
-
-
-
-
-
-
-
 </body>
+</html>
