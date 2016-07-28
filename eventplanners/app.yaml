@@ -30,18 +30,6 @@ handlers:
 #   static_files: prompic.jpg
 #   upload: prompic\.jpg
 
-- url: /event\.css
-  static_files: event.css
-  upload: event\.css
-
-- url: /grad\.css
-  static_files: grad.css
-  upload: grad\.css
-
-- url: /prompage\.css
-  static_files: prompage.css
-  upload: prompage\.css
-
 - url: /event\.js
   static_files: event.js
   upload: event\.js

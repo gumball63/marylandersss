@@ -3,8 +3,8 @@
 
 <head>
 	<title>Interactive Checklist!</title>
-	<link rel="stylesheet" href="event.css">
-	<script src="event.js"></script>
+	<link rel="stylesheet" href="static/event.css">
+	<script src="script/event.js"></script>
 </head>
 
 <h1>What Do You Have Ready?</h1>
@@ -13,6 +13,10 @@
     <div id='position'></div>
   <span style="font-size:30px;cursor:pointer" onclick="openNav()">MENU</span>
 </div>
+
+<style>
+  body {background-image: url(static/checklist.jpg)}
+</style>
 
 <body ID="checklistpage">
 
@@ -44,7 +48,7 @@
 </body>
 </div>
 
-<body>
+<body ID="checkboxes">
   <div class="weddingcheckboxes">Wedding:
     <ul><input type="checkbox" value="wedding">Location Booked</ul>
     <ul><input type="checkbox" value="wedding">Invitations</ul>
@@ -77,12 +81,12 @@
         });
     </script>
 <body>
-    <div style="width: 100%;"><img src="limousine.jpg" id="movinglimo" style="position:relative;"/></div>
+    <div style="width: 100%;"><img src="static/limousine.jpg" id="movinglimo" style="position:relative;"/></div>
 
 </body>
 </div>
 
-<body>
+<body ID="checkboxes">
   <div class="promcheckboxes">Prom:
     <ul><input type="checkbox" value="prom">Hair and Make-Up Appointment</ul>
     <ul><input type="checkbox" value="prom">Dress</ul>
@@ -119,7 +123,7 @@
 </body>
 </div>
 
-<body>
+<body ID="checkboxes">
   <div class="birthdaycheckboxes">Birthday:
     <ul><input type="checkbox" value="birthday">Invitations</ul>
     <ul><input type="checkbox" value="birthday">Food</ul>
@@ -161,12 +165,12 @@
         })
     </script>
 <body>
-    <div style="width: 100%;"><img src="graduationcap.jpg" id="movingcap" style="position:relative;"/></div>
+    <div style="width: 100%;"><img src="static/graduationcap.jpg" id="movingcap" style="position:relative;"/></div>
 
 </body>
 </div>
 
-<body>
+<body ID="checkboxes">
   <div class="graduationcheckboxes">Graduation:
     <ul><input type="checkbox" value="graduation">Invitations</ul>
     <ul><input type="checkbox" value="graduation">Party Favors</ul>
