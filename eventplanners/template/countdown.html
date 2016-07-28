@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+
+<head>
+	<title>Countdown PlanIt!</title>
+	<link rel="stylesheet" href="event.css">
+	<script src="event.js"></script>
+
+</head>
+
+<body ID="countdownpage">
+
+<div class="header-cont">
+		<img id="bannerImage" src="project_site_banner@1,25x.png" alt="Site Banner">
+	</div>
+
+<script>
+var deadline = 2019
+
+function getTimeRemaining(endtime){
+  var t = Date.parse(endtime) - Date.parse(new Date());
+  var seconds = Math.floor( (t/1000) % 60 );
+  var minutes = Math.floor( (t/1000/60) % 60 );
+  var hours = Math.floor( (t/(1000*60*60)) % 24 );
+  var days = Math.floor( t/(1000*60*60*24) );
+  return {
+    'total': t,
+    'days': days,
+    'hours': hours,
+    'minutes': minutes,
+    'seconds': seconds
+  };
+}
+return {
+  'total': t,
+  'days': days,
+  'hours': hours,
+  'minutes': minutes,
+  'seconds': seconds
+};
+getTimeRemaining(deadline).minutes
+</script>
+
+<div id="clockdiv"></div>
+<script>function initializeClock(id, endtime){
+  var clock = document.getElementById(id);
+  var timeinterval = setInterval(function(){
+    var t = getTimeRemaining(endtime);
+    clock.innerHTML = 'days: ' + t.days + '<br>' +
+                      'hours: '+ t.hours + '<br>' +
+                      'minutes: ' + t.minutes + '<br>' +
+                      'seconds: ' + t.seconds;
+    if(t.total<=0){
+      clearInterval(timeinterval);
+    }
+  },1000);
+}
+initializeClock('clockdiv', deadline);
+</script>
+
+	<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+	<a href="/checklist">CHECKLIST</a>
+	<a href="/countdown">COUNTDOWN</a>
+	<a href="/birthday">BIRTHDAY</a>
+  <a href="/graduation">GRADUATION</a>
+  <a href="/prom">PROM</a>
+  <a href="/wedding">WEDDING</a>
+</div>
+
+<div id="main">
+    <div id='position'></div>
+
+    <style>
+    body {
+      background-image: url("https://img1.etsystatic.com/018/0/6362870/il_fullxfull.493442659_t7sc.jpg");
+    }
+
+    </style>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">MENU</span>
+    </div>

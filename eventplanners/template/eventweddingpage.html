@@ -3,7 +3,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
 
 <head>
-	<title>Wedding Plan</title>
+	<title>Wedding PlanIt!</title>
 	<link rel="stylesheet" href="event.css">
 	<script src="event.js"></script>
 
@@ -11,13 +11,19 @@
 
 <body>
 
-<div class="header-cont">
-		<img id="bannerImage" src="project site banner@1,25x.png" alt="Site Banner">
-	</div>
 
 
-	<div id="mySidenav" class="sidenav">
+<image src="https://media1.giphy.com/media/grgvHdZo40yXK/200.gif" />
+<image src="https://media3.giphy.com/media/LE7KId3xoDe9O/200_s.gif" />
+<image src="https://media1.giphy.com/media/l41YBbqh4ujjSxAQw/200.gif" />
+<image src="https://media4.giphy.com/media/piPYwnocOtBG8/200.gif" />
+<image src="https://media2.giphy.com/media/gRtEeOwA1R08E/200.gif" />
+
+
+<div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+	<a href="/checklist">CHECKLIST</a>
+	<a href="/countdown">COUNTDOWN</a>
 	<a href="/birthday">BIRTHDAY</a>
   <a href="/graduation">GRADUATION</a>
   <a href="/prom">PROM</a>
@@ -29,24 +35,59 @@
 
 <h1 class="weddingpage">A Wedding to Remember</h1>
 
-<div>
+<div class="thumbnails">
 		<input ID="weddinghair" class="weddingbutton" type="button" value="Hairstyles">
+		    <script type="text/javascript">
+						function animateWedding() {
+								console.log("Called");
+								$('#weddinghaircollage').css({right:'10%%'});
+		            $('#weddinghaircollage').animate({right: '-110%'}, 10000, 'linear', function(){animateWedding();});
+								exit()
+		        }
+		        $(document).on("click", animateWedding)
+		    </script>
+		<body>
+		    <div style="width: 100%;"><img src="weddinghaircollage.jpg" id="weddinghaircollage" style="position:relative;"/></div>
+		</body>
+	<a>
+	</a>
 		<input ID="weddinginvitations" class="weddingbutton" type="button" value="Invitations">
+	</a>
+	<a>
 		<input ID="weddingflowers" class="weddingbutton" type="button" value="Flowers">
+	</a>
+	<a>
 		<input ID="weddingcake" class="weddingbutton" type="button" value="Cake">
+	</a>
+	<a>
 		<input ID="weddingdress" class="weddingbutton" type="button" value="Dresses">
+	</a>
+	<a>
 		<input ID="weddingtux" class="weddingbutton" type="button" value="Tuxedos">
+	</a>
+	<a>
 		<input ID="weddingrings" class="weddingbutton" type="button" value="Rings">
+	</a>
+	<a>
 		<input ID="weddingmusic" class="weddingbutton" type="button" value="Music">
+	</a>
+	<a>
 		<input ID="weddinglocation" class="weddingbutton" type="button" value="Locations">
+	</a>
+	<a>
 		<input ID="weddingfood" class="weddingbutton" type="button" value="Food">
+	</a>
+	<a>
 		<input ID="weddingdecorations" class="weddingbutton" type="button" value="Decorations">
+	</a>
+	<a>
 		<input ID="weddingbridesmaids" class="weddingbutton" type="button" value="Bridesmaids">
+	</a>
 </div>
 
 <script>
   $(weddinghair).on("click", sayhair)
-  function sayhair () {alert("Hair!");}
+  function sayhair () {fadeout();}
 	$(weddinginvitations).on("click", sayinvite)
 	function sayinvite () {alert("Hair!");}
 	$(weddingflowers).on("click", sayhi)
