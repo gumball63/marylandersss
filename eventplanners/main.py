@@ -8,7 +8,6 @@ jinja_environment = jinja2.Environment(
 
 class MainHandler(webapp2.RequestHandler):
     def get(self):
-        self.response.write('Choose an event!!')
         template = jinja_environment.get_template('event.html')
         self.response.out.write(template.render())
 

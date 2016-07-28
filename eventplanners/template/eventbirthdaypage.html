@@ -3,13 +3,15 @@
 <head>
   <title>Birthday PlanIt!</title>
   <link  rel="stylesheet" type="text/css" href="event.css">
-  <script src="event.js"></script>
+  <script type="text/javascript" src="event.js"> </script>
+  <script type="text/javascript" src="eventmodal.js"> </script>  
+
 </head>
 
-<body>
+<body class="birthdayPageBody">
     <div class="header-cont">
-        <img id="bannerImage" src="project site banner@1,25x.png" alt="Site Banner">
-    </div>
+    <img ID="bannerImage" src="project_site_banner@1,25x.png" alt="Site Banner">
+  </div>
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
@@ -22,7 +24,276 @@
 <div id="main">
     <div id='position'></div>
     <h1>BIRTHDAY</h1>
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()">MENU</span>
+    <p>Birthday parties are a great boost to anyone's self-esteem. Making them feel like kings (or queens) for the day is one of the best (and most lasting) gifts you can give them. But where and how should you start?</p>
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">☰MENU</span>
+
+</div>
+
+<div class="buttonMenu">
+    <!-- Trigger/Open The Modal -->
+    <a href="#openModalinvitation" id="birthdaybutton" ">
+      <input ID="invitations" class="birthdaybuttons" type="button" value="Invitations">
+    </a>
+
+    <a href="#openModaltheme" id="birthdaybutton" ">
+     <input ID="theme" class="birthdaybuttons" type="button" value="Theme"> 
+    </a>
+
+    <a href="#openModallocation" id="birthdaybutton" ">
+            <input ID="location" class="birthdaybuttons" type="button" value="Location">
+    </a>
+    
+    <a href="#openModaldecorations" id="birthdaybutton" ">
+      <input ID="decorations" class="birthdaybuttons" type="button" value="Decorations">
+    </a>
+    
+    <a href="#openModalentertainment" id="birthdaybutton" ">
+      <input ID="entertainment" class="birthdaybuttons" type="button" value="Entertainment">
+    </a>
+    
+    <a href="#openModalhelp" id="birthdaybutton">
+      <input ID="help" class="birthdaybuttons" type="button" value="Organize/Enlist Help">
+     </a>
+
+    <a href="#openModalfood" id="birthdaybutton" >
+      <input ID="food" class="birthdaybuttons" type="button" value="Food">
+    </a>
+
+    <a href="#openModalbudgeting" id="birthdaybutton" ">
+      <input ID="budgeting" class="birthdaybuttons" type="button" value="Budgeting">
+    </a>
+
+    <a href="#openModalsiblings" id="birthdaybutton" ">
+      <input ID="siblings" class="birthdaybuttons" type="button" value="Siblings">
+    </a>
+
+    <a href="#openModalmiscellaneous" id="birthdaybutton" ">
+      <input ID="miscellaneous" class="birthdaybuttons" type="button" value="Miscellaneous">
+    </a>
+</div>
+
+
+
+<!-- =================== MODAL POP UPS HERE ============================================ -->
+
+<div id="openModalinvitation" class="modalDialoginvitation">
+  <div>
+    <a href="#close" title="Close" class="close">X</a>
+    <!-- Modal content -->
+
+      <div class="modal-header">
+        <h2>Modal Header</h2>
+      </div>
+
+      <div class="modal-body">
+        <p>Some text in the Modal Body</p>
+        <p>Some other text...</p>
+      </div>
+
+      <div class="modal-footer">
+        <h3>Modal Footer</h3>
+     </div>
+    
+  </div>
+</div>
+<!--**********************************************************-->
+
+<div id="openModaltheme" class="modalDialogtheme">
+  <div>
+    <a href="#close" title="Close" class="close">X</a>
+    <!-- Modal content -->
+
+      <div class="modal-header">
+        <h2>Modal Header</h2>
+      </div>
+
+      <div class="modal-body">
+        <p>Some text in the Modal Body</p>
+        <p>Some other text...</p>
+      </div>
+
+      <div class="modal-footer">
+        <h3>Modal Footer</h3>
+     </div>
+    
+  </div>
+</div>
+
+<!--**********************************************************-->
+
+<div id="openModallocation" class="modalDialoglocation">
+  <div>
+    <a href="#close" title="Close" class="close">X</a>
+    <!-- Modal content -->
+
+      <div class="modal-header">
+        <h2>Modal Header</h2>
+      </div>
+
+      <div class="modal-body">
+        <p>Some text in the Modal Body</p>
+        <p>Some other text...</p>
+      </div>
+
+      <div class="modal-footer">
+        <h3>Modal Footer</h3>
+     </div>
+    
+  </div>
+</div>
+<!--**********************************************************-->
+
+<div id="openModaldecorations" class="modalDialogdecorations">
+  <div>
+    <a href="#close" title="Close" class="close">X</a>
+    <!-- Modal content -->
+
+      <div class="modal-header">
+        <h2>Modal Header</h2>
+      </div>
+
+      <div class="modal-body">
+        <p>Some text in the Modal Body</p>
+        <p>Some other text...</p>
+      </div>
+
+      <div class="modal-footer">
+        <h3>Modal Footer</h3>
+     </div>
+    
+  </div>
+</div>
+<!--**********************************************************-->
+
+<div id="openModalentertainment" class="modalDialogentertainment">
+  <div>
+    <a href="#close" title="Close" class="close">X</a>
+    <!-- Modal content -->
+
+      <div class="modal-header">
+        <h2>Modal Header</h2>
+      </div>
+
+      <div class="modal-body">
+        <p>Some text in the Modal Body</p>
+        <p>Some other text...</p>
+      </div>
+
+      <div class="modal-footer">
+        <h3>Modal Footer</h3>
+     </div>
+    
+  </div>
+</div>
+<!--**********************************************************-->
+
+<div id="openModalhelp" class="modalDialoghelp">
+  <div>
+    <a href="#close" title="Close" class="close">X</a>
+    <!-- Modal content -->
+
+      <div class="modal-header">
+        <h2>Modal Header</h2>
+      </div>
+
+      <div class="modal-body">
+        <p>Some text in the Modal Body</p>
+        <p>Some other text...</p>
+      </div>
+
+      <div class="modal-footer">
+        <h3>Modal Footer</h3>
+     </div>
+    
+  </div>
+</div>
+<!--**********************************************************-->
+
+<div id="openModalfood" class="modalDialogfood">
+  <div>
+    <a href="#close" title="Close" class="close">X</a>
+    <!-- Modal content -->
+
+      <div class="modal-header">
+        <h2>Modal Header</h2>
+      </div>
+
+      <div class="modal-body">
+        <p>Some text in the Modal Body</p>
+        <p>Some other text...</p>
+      </div>
+
+      <div class="modal-footer">
+        <h3>Modal Footer</h3>
+     </div>
+    
+  </div>
+</div>
+<!--**********************************************************-->
+
+<div id="openModalbudgeting" class="modalDialogbudgeting">
+  <div>
+    <a href="#close" title="Close" class="close">X</a>
+    <!-- Modal content -->
+
+      <div class="modal-header">
+        <h2>Modal Header</h2>
+      </div>
+
+      <div class="modal-body">
+        <p>Some text in the Modal Body</p>
+        <p>Some other text...</p>
+      </div>
+
+      <div class="modal-footer">
+        <h3>Modal Footer</h3>
+     </div>
+    
+  </div>
+</div>
+<!--**********************************************************-->
+
+<div id="openModalsiblings" class="modalDialogsiblings">
+  <div>
+    <a href="#close" title="Close" class="close">X</a>
+    <!-- Modal content -->
+
+      <div class="modal-header">
+        <h2>Modal Header</h2>
+      </div>
+
+      <div class="modal-body">
+        <p>Some text in the Modal Body</p>
+        <p>Some other text...</p>
+      </div>
+
+      <div class="modal-footer">
+        <h3>Modal Footer</h3>
+     </div>
+    
+  </div>
+</div>
+<!--**********************************************************-->
+
+<div id="openModalmiscellaneous" class="modalDialogmiscellaneous">
+  <div>
+    <a href="#close" title="Close" class="close">X</a>
+    <!-- Modal content -->
+
+      <div class="modal-header">
+        <h2>Modal Header</h2>
+      </div>
+
+      <div class="modal-body">
+        <p>Some text in the Modal Body</p>
+        <p>Some other text...</p>
+      </div>
+
+      <div class="modal-footer">
+        <h3>Modal Footer</h3>
+     </div>
+    
+  </div>
 </div>
 
 
@@ -32,26 +303,9 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<ul id=menu>
+  <li><a href="#L24">Checklist</a></li>
+</ul>
 
 
 
