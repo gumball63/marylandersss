@@ -4,70 +4,82 @@ runtime: python27
 api_version: 1
 threadsafe: no  #always safe to start out with no
 
+
 handlers:
-- url: /favicon\.ico
-  static_files: favicon.ico
-  upload: favicon\.ico
+# - url: /favicon\.ico
+#   static_files: favicon.ico
+#   upload: favicon\.ico
 
-- url: /event\.css
-  static_files: event.css
-  upload: event\.css
+# - url: /event\.css
+#   static_files: event.css
+#   upload: event\.css
 
-- url: /event\.js
-  static_files: event.js
-  upload: event\.js
+# - url: /event\.js
+#   static_files: event.js
+#   upload: event\.js
 
-- url: /balloons1\.png
-  static_files: balloons1.png
-  upload: balloons1\.png
+# - url: /balloons1\.png
+#   static_files: balloons1.png
+#   upload: balloons1\.png
 
-- url: /drevene-pozadie\.jpg
-  static_files: drevene-pozadie.jpg
-  upload: drevene-pozadie\.jpg
+# - url: /drevene-pozadie\.jpg
+#   static_files: drevene-pozadie.jpg
+#   upload: drevene-pozadie\.jpg
 
-- url: /project_site_banner@1,25x\.png
-  static_files: project_site_banner@1,25x.png
-  upload: project_site_banner@1,25x\.png
+# - url: /project_site_banner@1,25x\.png
+#   static_files: project_site_banner@1,25x.png
+#   upload: project_site_banner@1,25x\.png
 
-- url: /prompic\.jpg
-  static_files: prompic.jpg
-  upload: prompic\.jpg
+# - url: /prompic\.jpg
+#   static_files: prompic.jpg
+#   upload: prompic\.jpg
 
-- url: /weddingpic\.jpg
-  static_files: weddingpic.jpg
-  upload: weddingpic\.jpg
+# - url: /weddingpic\.jpg
+#   static_files: weddingpic.jpg
+#   upload: weddingpic\.jpg
 
-- url: /graduationpic\.jpg
-  static_files: graduationpic.jpg
-  upload: graduationpic\.jpg
+# - url: /graduationpic\.jpg
+#   static_files: graduationpic.jpg
+#   upload: graduationpic\.jpg
 
-- url: /limousine\.jpg
-  static_files: limousine.jpg
-  upload: limousine\.jpg
+# - url: /limousine\.jpg
+#   static_files: limousine.jpg
+#   upload: limousine\.jpg
 
-- url: /graduationcap\.jpg
-  static_files: graduationcap.jpg
-  upload: graduationcap\.jpg
+# - url: /graduationcap\.jpg
+#   static_files: graduationcap.jpg
+#   upload: graduationcap\.jpg
 
-- url: /weddinghaircollage\.jpg
-  static_files: weddinghaircollage.jpg
-  upload: weddinghaircollage\.jpg
+# - url: /weddinghaircollage\.jpg
+#   static_files: weddinghaircollage.jpg
+#   upload: weddinghaircollage\.jpg
 
-- url: /weddingflowercollage\.jpg
-  static_files: weddingflowercollage.jpg
-  upload: weddingflowercollage\.jpg
+# - url: /weddingflowercollage\.jpg
+#   static_files: weddingflowercollage.jpg
+#   upload: weddingflowercollage\.jpg
 
-- url: /weddinginvitationcollage\.jpg
-  static_files: weddinginvitationcollage.jpg
-  upload: weddinginvitationcollage\.jpg
+# - url: /weddinginvitationcollage\.jpg
+#   static_files: weddinginvitationcollage.jpg
+#   upload: weddinginvitationcollage\.jpg
 
-- url: /checklist\.html
-  static_files: checklist.html
-  upload: checklist\.html
+# - url: /checklist\.html
+#   static_files: checklist.html
+#   upload: checklist\.html
 
-- url: /countdown\.html
-  static_files: countdown.html
-  upload: countdown\.html
+# - url: /countdown\.html
+#   static_files: countdown.html
+#   upload: countdown\.html
+
+
+########################################################
+- url: /static
+  static_dir: static
+
+- url: /scripts
+  static_dir: scripts
+##########################################################
+
+
 
 - url: .*
   script: main.app
