@@ -21,7 +21,6 @@
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
 	<a href="/checklist">CHECKLIST</a>
-	<a href="/countdown">COUNTDOWN</a>
 	<a href="/birthday">BIRTHDAY</a>
   <a href="/graduation">GRADUATION</a>
   <a href="/prom">PROM</a>
@@ -35,7 +34,7 @@
 
 <div class="thumbnails">
 		<input ID="weddinghair" class="weddingbutton" type="button" value="Hairstyles">
-		    <script type="text/javascript">
+<!--		    <script type="text/javascript">
 						function animateWedding() {
 								console.log("Called");
 								$('#weddinghaircollage').css({right:'110%'});
@@ -44,39 +43,14 @@
 		        }
 		        $(document).on("click", animateWedding)
 		    </script>
+
 			<body>
 			    <div style="width: 100%;"><img src="weddinghaircollage.jpg" id="weddinghaircollage" style="position:absolute;"/></div>
 			</body>
-
+-->
 		<input ID="weddinginvitations" class="weddingbutton" type="button" value="Invitations">
-				<script type="text/javascript">
-						function animateInvitation() {
-								console.log("Called");
-								$('#weddinginvitationcollage').css({right:'10%%'});
-								$('#weddinginvitationcollage').animate({right: '-110%'}, 10000, 'linear', function(){animateInvitation();});
-								exit()
-						}
-						$(document).on("click", animateInvitation)
-				</script>
-			<body>
-					<div style="width: 100%;"><img src="weddinginvitationcollage.jpg" id="weddinginvitationcollage" style="position:absolute;"/></div>
-			</body>
 
 		<input ID="weddingflowers" class="weddingbutton" type="button" value="Flowers">
-<!--				<script type="text/javascript">
-						function animateFlower() {
-								console.log("Called");
-								$('#weddingflowercollage').css({right:'10%%'});
-								$('#weddingflowercollage').animate({right: '-110%'}, 10000, 'linear', function(){animateFlower();});
-								exit()
-						}
-						$(document).on("click", animateFlower)
-				</script>
-			<body>
-					<div style="width: 100%;"><img src="weddingflowercollage.jpg" id="weddingflowercollage" style="position:relative;"/></div>
-			</body>
--->
-	</a>
 	<a>
 		<input ID="weddingcake" class="weddingbutton" type="button" value="Cake">
 	</a>
@@ -120,3 +94,23 @@ body {
 </div>
 
 </body>
+<!--All of this stuff for the button************************************-->
+<div id="openModalinvitation" class="modalDialoginvitation">
+  <div>
+    <a href="#close" title="Close" class="close">X</a>
+    <!-- Modal content -->
+
+      <div class="modal-header">
+        <h2>Modal Header</h2>
+      </div>
+
+      <div class="modal-body">
+        <p>You should make the guest list for your preschooler, but once your child is over three or four, he should be consulted. The invitations can be either store-bought or homemade and should set the mood for the event. Older kids may enjoy making invitations out of paper dolls, puzzle pieces or computer templates, depending on your chosen theme. In addition to obvious information like the time, date and directions, include special details like "bring a swimsuit" or "parents should accompany children."</p>
+      </div>
+
+      <div class="modal-footer">
+        <h3>Modal Footer</h3>
+     </div>
+
+  </div>
+</div>
