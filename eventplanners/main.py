@@ -36,10 +36,6 @@ class ChecklistHandler(webapp2.RequestHandler):
         template = jinja_environment.get_template('checklist.html')
         self.response.out.write(template.render())
 
-class CountdownHandler(webapp2.RequestHandler):
-    def get(self):
-        template = jinja_environment.get_template('countdown.html')
-        self.response.out.write(template.render())
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler),
@@ -48,5 +44,4 @@ app = webapp2.WSGIApplication([
     ('/graduation', GraduationHandler),
     ('/birthday', BirthdayHandler),
     ('/checklist', ChecklistHandler),
-    ('/countdown', CountdownHandler),
 ], debug=True)
