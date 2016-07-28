@@ -13,6 +13,14 @@ handlers:
   static_files: event.css
   upload: event\.css
 
+- url: /prompage\.css
+  static_files: prompage.css
+  upload: prompage\.css
+
+- url: /grad\.css
+    static_files: grad.css
+    upload: grad\.css
+
 - url: /event\.js
   static_files: event.js
   upload: event\.js
